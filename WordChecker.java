@@ -25,7 +25,8 @@ public class WordChecker {
             String before = wordList.get(i - 1);
             if(after.indexOf(before) < 0) return false;
         }
-        /* to be implemented in part (a) */ }
+        /* to be implemented in part (a) */
+        return true; }
 
     /**
      * Returns an ArrayList<String> based on strings from wordList that start
@@ -37,11 +38,11 @@ public class WordChecker {
      * wordList.
      */
     public ArrayList<String> createList(String target) {
-        /* to be implemented in part (b) */ }
-        ArrayList<String> list=new ArrayList<String>();
+    /* to be implemented in part (b) */
+        ArrayList<String> list = new ArrayList<String>();
         for (String s : wordList)
         {
-            if (s.indexOf(target)==0)
+            if (s.indexOf(target)==0) 
             {
                 list.add(s.substring(target.length()));
             }
